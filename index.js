@@ -87,7 +87,9 @@ const titles = [
 //Array of authors and the book they wrote
 //"--- wrote --- in ---"
 
-//Sort books from oldest to most recent
+   books.ForEach((authorFirst, authorLast, name, publishDate) => console.log(authorFirst, authorLast, name, publishDate));
+  
+  //Sort books from oldest to most recent
 
 //sort books alphabetically
 
