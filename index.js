@@ -87,26 +87,36 @@ const titles = [
 //Array of authors and the book they wrote
 //"--- wrote --- in ---"
 
-  //  books.ForEach((authorFirst, authorLast, name, publishDate) =>
-  //   console.log(authorFirst, authorLast, name, publishDate));
-  
-  //Sort books from oldest to most recent
+books.forEach((books) => {
+  console.log(
+    `${books.authorFirst} ${books.authorLast} wrote ${books.name} in ${books.publishDate}`
+  )
+});
+
+//Sort books from oldest to most recent
 
 //sort books alphabetically
 
 //Find who wrote War and Peace
 
-function WarandPeace () {
- if (books.name.value = "War and Peace") {
-  console.log (books.authorFirst.value, books.authorLast.value)
- }
-}
-console.log (WarandPeace)
+const WAP = books.find((books) => books.name == "War and Peace");
+console.log(
+  `War and Peace was written by ${WAP.authorFirst} ${WAP.authorLast}.`
+);
 
 //how many books were written before 1900?
+const oldB = books.filter((books) => books.publishDate < 1900);
+console.log(oldB);
 
 //was there at least one book published within the last 100 years?
+const hundred = books.find((books) => books.publishDate >= 1923);
+console.log(hundred);
+
 
 //was every book published within the last 100 years?
+const nohun = books.filter((books) => books.publishDate <= 1923);
+console.log(nohun);
 
 //print a list of books that "includes" the genre historical
+const genreH = books.forEach(books.filter((books) => books.genre.includes = ("historical")));
+console.log(genreH); 
