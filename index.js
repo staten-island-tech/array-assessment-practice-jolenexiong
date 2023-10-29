@@ -75,7 +75,7 @@ const titles = [
   "To Kill a Mockingbird",
   "The Great Gatsby",
   "The Hobbit",
-  "Harry Potter and the Deathly Hallows",
+  "Harry Potter and the Deathly Hallows",s
   "Ulysses",
   "War and Peace",
   "Pride and Prejudice",
@@ -118,5 +118,4 @@ const nohun = books.filter((books) => books.publishDate <= 1923);
 console.log(nohun);
 
 //print a list of books that "includes" the genre historical
-const genreH = books.forEach(books.filter((books) => books.genre.includes = ("historical")));
-console.log(genreH); 
+const genreH = 
